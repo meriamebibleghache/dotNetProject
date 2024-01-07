@@ -1,0 +1,42 @@
+﻿<Window x:Class="gestion_de_biblios.AdminRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AdminRegister" Height="534" Width="848">
+    <Grid Margin="430,0,0,-6">
+        <!-- Définir trois lignes -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="110"/>
+            <!-- Ligne pour le logo -->
+            <RowDefinition Height="257*"/>
+            <RowDefinition Height="66*"/>
+            <!-- Ligne pour le formulaire (nom d'utilisateur, mot de passe, e-mail, job) -->
+            <RowDefinition Height="Auto" MinHeight="88.04"/>
+            <!-- Ligne pour le bouton "Register" -->
+        </Grid.RowDefinitions>
+
+        <!-- Logo centré en haut de la page dans la première ligne -->
+        <Image Source="/images/register.jpg" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
+
+        <!-- StackPanel pour le formulaire dans la deuxième ligne -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="242" Height="302" Margin="0,10,0,0" Grid.RowSpan="2">
+            <Label Content="Username:"/>
+            <TextBox x:Name="UsernameTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="Password:"/>
+            <PasswordBox x:Name="PasswordBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="Email:"/>
+            <TextBox x:Name="EmailTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="Job:"/>
+            <TextBox x:Name="JobTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+        </StackPanel>
+
+        <!-- StackPanel pour le bouton "Register" dans la troisième ligne -->
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150"/>
+        <Button Content="Register" Click="RegisterButton_Click" Margin="158,46,158,78" Grid.RowSpan="2" Grid.Row="2" BorderBrush="#FF111275" Background="#FF111275" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <Border  BorderThickness="1" HorizontalAlignment="Left" Height="569" VerticalAlignment="Top" Width="400" Background="#FF00065B" Margin="-434,-1,0,0" Grid.RowSpan="4"/>
+
+    </Grid>
+</Window>

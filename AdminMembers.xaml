@@ -1,0 +1,19 @@
+﻿<Window x:Class="gestion_de_biblios.AdminMembers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AdminMembers" Height="450" Width="800">
+
+    <Grid Background="#FF03005B">
+        <DataGrid x:Name="AdminDataGrid" AutoGenerateColumns="true" CanUserAddRows="False" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top">
+        </DataGrid>
+
+        <Button Content="Add Admin" Click="AddAdmin_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Height="44" Width="100" FontWeight="Bold" />
+        <Button Content="Remove Admin" Click="RemoveAdmin_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="134,0,0,10" Height="44" Width="100" FontWeight="Bold" />
+        <Button Content="Modify Admin" Click="ModifyAdmin_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="261,0,0,10" Height="44" Width="100" FontWeight="Bold" />
+
+        <Button Content="Return Home" Click="ReturnHome_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="44" Width="100" FontWeight="Bold" />
+    </Grid>
+</Window>

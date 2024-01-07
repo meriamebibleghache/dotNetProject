@@ -1,0 +1,27 @@
+﻿<Window x:Class="gestion_de_biblios.AdminUpdateBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AdminUpdateBook" Height="468" Width="588">
+    <Grid Margin="0,0,0,-209">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="288" Height="338" Margin="0,80,0,0" Grid.RowSpan="2">
+            <Label Content="Titre:"/>
+            <TextBox x:Name="TitleTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="Auteur:"/>
+            <TextBox x:Name="AuthorTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="Nombre of pages:"/>
+            <TextBox x:Name="PagesTextBox" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Label Content="publication date:"/>
+            <DatePicker x:Name="PublicationDate" Width="200" Height="30" Margin="0,0,0,10"/>
+
+            <Button Content="Up Date" Width="150" Height="30" Click="UpdateBook_Click" Background="#FF130267" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>

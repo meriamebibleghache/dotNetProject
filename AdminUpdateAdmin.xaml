@@ -1,0 +1,30 @@
+﻿<Window x:Class="gestion_de_biblios.AdminUpdateAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AdminUpdateAdmin" Height="350" Width="500">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Update Admin Information" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+
+            <Label Content="Username:"/>
+            <TextBox x:Name="UserNameTextBox" Margin="5" IsReadOnly="True"/>
+
+            <Label Content="Email:"/>
+            <TextBox x:Name="EmailTextBox" Margin="5"/>
+
+            <Label Content="Password:"/>
+            <PasswordBox x:Name="PasswordTextBox" Margin="5"/>
+
+            <Label Content="Job:"/>
+            <TextBox x:Name="JobTextBox" Margin="5"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                <Button Content="Update" Click="UpdateAdmin_Click" Width="80" Margin="5" Background="#FFC8BFEA" FontWeight="Bold"/>
+                <Button Content="Cancel" Click="CancelUpdate_Click" Width="80" Margin="5" Background="#FFC8BFEA" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

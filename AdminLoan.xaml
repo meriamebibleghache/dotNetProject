@@ -1,0 +1,12 @@
+﻿<Window x:Class="gestion_de_biblios.AdminLoan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AdminLoan" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="LoansDataGrid" AutoGenerateColumns="True" CanUserAddRows="True" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Width="400"/>
+      
+        <Button Content="Export to Excel" Click="ExportToExcel_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Height="44" Width="150" FontWeight="Bold" />
+        <Button Content="Import from Excel" Click="ImportFromExcel_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="170,0,0,10" Height="44" Width="150" FontWeight="Bold" />
+        <Button Content="Return to Home" Click="ReturnToHome_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="44" Width="150" FontWeight="Bold" />
+    </Grid>
+</Window>
